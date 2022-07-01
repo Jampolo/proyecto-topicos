@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const NewsSchema =mongoose.Schema({
+const DoctorsSchema =mongoose.Schema({
     name: {
         type: String,
         require: true
