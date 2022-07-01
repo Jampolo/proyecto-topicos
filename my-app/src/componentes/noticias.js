@@ -28,11 +28,13 @@ const Noticias = () => {
             <ul>
                 {tasks.map(item => {
                     return(
-                        <li key={item._id}>
-                            {item.titulo} - {item.cuerpo} - {item.date}
+                        <ul key={item._id}>
+                            <ul>{item.titulo}</ul>
+                            <ul>{item.cuerpo}</ul>
+                            <ul>{item.date}</ul>
                             <button type="button" onClick={() => patchHandler(item._id)}>Editar</button>
                             <button onClick={() => deleteHandler(item._id)}>Borrar</button>
-                        </li>
+                        </ul>
                     )
                 })}
             </ul>

@@ -28,11 +28,15 @@ const DocList = () => {
             <ul>
                 {tasks.map(item => {
                     return(
-                        <li key={item._id}>
-                            {item.name} - {item.spcc} - {item.office} - {item.office} - {item.schedule}
+                        <ul key={item._id}>
+                            <ul>{item.name}</ul>
+                            <ul>{item.spec}</ul>
+                            <ul>{item.office}</ul>
+                            <ul>{item.phone}</ul>
+                            <ul>{item.schedule}</ul>
                             <button type="button" onClick={() => patchHandler(item._id)}>Editar</button>
                             <button onClick={() => deleteHandler(item._id)}>Borrar</button>
-                        </li>
+                        </ul>
                     )
                 })}
             </ul>

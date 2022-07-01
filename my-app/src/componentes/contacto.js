@@ -19,6 +19,7 @@ const Contacto = () => {
                     <label>Escriba aquí</label>
                     <input type="text"></input>
                 </div>
+                <button>Enviar</button>
             </form>
         </div>
     )
