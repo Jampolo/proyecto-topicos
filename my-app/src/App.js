@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './componentes/header';
+import Login from './componentes/login';
+import Footer from './componentes/footer';
+import NewNoticia from './componentes/newNoticia';
+import Noticias from './componentes/noticias';
+import NewDoctor from './componentes/newDoctor';
+import DocList from './componentes/DocList';
+import Mision from './componentes/mision';
+import Contacto from './componentes/contacto';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className='body'>
+        <NewNoticia/>
+        <Noticias/>
+        <NewDoctor/>
+        <DocList/>
+        <Mision/>
+        <Contacto/>
+      </div>
+      <Footer/>
     </div>
   );
 }
