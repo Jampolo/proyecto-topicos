@@ -19,7 +19,7 @@ const NewDoctor = () => {
             phone: enteredPhone,
             schedule: enteredSchedule
         };
-        axios.post("http://localhost:5000/noctor", task).then(res => {
+        axios.post("http://localhost:5000/doctor", task).then(res => {
 
         });
     }
