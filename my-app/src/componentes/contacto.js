@@ -1,3 +1,5 @@
+import "./contacto.css";
+
 const Contacto = () => {
     return(
         <div>
@@ -17,7 +19,7 @@ const Contacto = () => {
                 </div>
                 <div>
                     <label>Escriba aquí</label>
-                    <input type="text"></input>
+                    <input type="text" className="texto"></input>
                 </div>
                 <button>Enviar</button>
             </form>
