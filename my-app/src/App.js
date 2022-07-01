@@ -7,6 +7,8 @@ import NewNoticia from './componentes/newNoticia';
 import Noticias from './componentes/noticias';
 import NewDoctor from './componentes/newDoctor';
 import DocList from './componentes/DocList';
+import Mision from './componentes/mision';
+import Contacto from './componentes/contacto';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Noticias/>
         <NewDoctor/>
         <DocList/>
+        <Mision/>
+        <Contacto/>
       </div>
       <Footer/>
     </div>
