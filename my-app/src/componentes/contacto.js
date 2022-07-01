@@ -6,20 +6,19 @@ const Contacto = () => {
             <li>Formulario de contacto</li>
             <form>
                 <div>
-                    <label>Nombre</label>
+                    <label className="labels">Nombre</label>
                     <input type="text"></input>
                 </div>
                 <div>
-                    <label>Correo</label>
+                    <label className="labels">Correo</label>
                     <input type="text"></input>
                 </div>
                 <div>
-                    <label>Asunto</label>
+                    <label className="labels">Asunto</label>
                     <input type="text"></input>
                 </div>
                 <div>
-                    <label>Escriba aquí</label>
-                    <input type="text" className="texto"></input>
+                    <textarea type="text" className="texto"></textarea>
                 </div>
                 <button>Enviar</button>
             </form>

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import "./newDoctor.css";
 
 const NewDoctor = () => {
 
@@ -32,23 +33,23 @@ const NewDoctor = () => {
     return(
         <form onSubmit={submitHandler}>
             <div>
-                <label>Nombre</label>
+                <label className="labels">Nombre</label>
                 <input type="text" value={enteredName} onChange={nameChangeHandler}></input>
             </div>
             <div>
-                <label>Especialidad</label>
+                <label className="labels">Especialidad</label>
                 <input type="text" value={enteredSpec} onChange={specChangeHandler}></input>
             </div>
             <div>
-                <label>Oficina</label>
+                <label className="labels">Oficina</label>
                 <input type="text" value={enteredOffice} onChange={officeChangeHandler}></input>
             </div>
             <div>
-                <label>Teléfono</label>
+                <label className="labels">Teléfono</label>
                 <input type="text" value={enteredPhone} onChange={phoneChangeHandler}></input>
             </div>
             <div>
-                <label>Horario</label>
+                <label className="labels">Horario</label>
                 <input type="text" value={enteredSchedule} onChange={scheduleChangeHandler}></input>
             </div>
             <button type="submit">Agregar especialista</button>
