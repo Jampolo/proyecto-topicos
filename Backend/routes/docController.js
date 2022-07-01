@@ -23,9 +23,11 @@ router2.get("/:taskId", async (req, res) => {
 
 router2.post("/", async (req, res) => {
     const task = new Task({
-        titulo: req.body.titulo,
-        cuerpo: req.body.cuerpo,
-        date: req.body.date
+        name: req.body.name,
+        spec: req.body.spec,
+        office: req.body.office,
+        phone: req.body.phone,
+        schedule: req.body.schedule
     });
     try{
         const savedTask = await task.save();

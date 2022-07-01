@@ -13,8 +13,8 @@ app.use(cors())
 
 app.use(bodyParser.json());
 
-app.use("/doctores", docDataRoute);
-app.use("/noticias", newsDataRoute);
+app.use("/doctor", docDataRoute);
+app.use("/noticia", newsDataRoute);
 
 app.get("/", (req, res) => {
     res.send("Home")
